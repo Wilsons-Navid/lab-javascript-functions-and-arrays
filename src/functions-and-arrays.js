@@ -102,7 +102,19 @@ console.log(sumAllKind);
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+function averageNumbers(arrayForAvg) {
+
+  let sum = 0;
+  for (let i = 0; i < arrayForAvg.length; i++){
+    sum = sum + arrayForAvg[i]
+  }
+  let average = sum / arrayForAvg.length
+
+  return average;
+}
+
+let averageOfNumbersAvg = averageNumbers(numbersAvg)
+console.log(averageOfNumbersAvg);
 
 
 // Level 2: Array of strings
