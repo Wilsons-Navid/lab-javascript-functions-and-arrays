@@ -203,7 +203,24 @@ console.log(uniqueArray);
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist() {}
+function doesWordExist(arrayOfWords, word) {
+      
+            for (let i = 0; i < arrayOfWords.length; i++){
+               if (word === arrayOfWords[i]){
+                return ` the ${word} is present in the array `
+               } else{
+                return` the ${word} is absent the array`
+               }
+              
+          
+
+}
+}
+
+ let check = doesWordExist(wordsFind, 'machin')
+ console.log(check);
+
+
 
 
 
