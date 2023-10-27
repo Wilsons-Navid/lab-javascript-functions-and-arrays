@@ -207,9 +207,9 @@ function doesWordExist(arrayOfWords, word) {
       
             for (let i = 0; i < arrayOfWords.length; i++){
                if (word === arrayOfWords[i]){
-                return ` the ${word} is present in the array `
+                return ` the word ${word} is present in the array `
                } else{
-                return` the ${word} is absent the array`
+                return` the  word ${word} is absent the array`
                }
               
           
@@ -239,7 +239,31 @@ const wordsCount = [
   'matter'
 ];
 
-function howManyTimes() {}
+function howManyTimes(arrayOfWordsToBeCounted, wordToBeCounted) {
+          let totalCount = 0;
+  
+            for(let i = 0; i < arrayOfWordsToBeCounted.length; i++){
+             
+
+              if(wordToBeCounted === arrayOfWordsToBeCounted[i] ){
+                totalCount  = totalCount + 1;
+                
+              }
+              
+              
+               
+            
+              
+            }
+
+            return totalCount;
+
+            
+    
+}
+
+let numberOccurrence = howManyTimes(wordsCount, 'matter');
+console.log(numberOccurrence);
 
 
 
