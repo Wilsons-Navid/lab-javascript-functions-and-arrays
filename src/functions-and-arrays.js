@@ -59,9 +59,41 @@ let sum1 = sumNumbers(numbers)
 console.log(sum1);
 
 
-
 // Iteration #3.1 Bonus:
-function sum() {}
+const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
+// should return: 57
+
+
+function sum(arr) {
+  let total = 0;
+    
+
+       for(let i = 0; i < arr.length; i++ ){
+        
+        
+          if (typeof(arr[i]) === 'string') {
+          total += arr[i].length;
+        }
+
+       else  if (typeof(arr[i]) === 'boolean'){
+          total += arr[i]? 1 : 0
+        }
+        
+        
+       else if (typeof(arr[i]) === 'number'){
+         total += arr[i]
+        }
+
+       
+       }
+
+      return total;
+
+}
+
+let sumAllKind = sum(mixedArr);
+
+console.log(sumAllKind);
 
 
 
